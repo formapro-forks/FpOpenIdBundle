@@ -1,7 +1,6 @@
 <?php
 namespace Fp\OpenIdBundle\Security\Http\Firewall;
 
-use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface;
@@ -10,7 +9,9 @@ use Symfony\Component\Security\Http\HttpUtils;
 use Symfony\Component\Security\Http\Authentication\AuthenticationSuccessHandlerInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationFailureHandlerInterface;
 use Symfony\Component\Security\Http\Firewall\AbstractAuthenticationListener;
+use \Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 use Fp\OpenIdBundle\RelyingParty\RelyingPartyInterface;
 
